@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&family=Ubuntu:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgb(213, 230, 233), rgb(44, 128, 44));
+}
+.location,
+.temp {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.temp {
+  flex-direction: column;
+}
+.degree {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.degree span {
+  margin: 10px;
+  font-size: 25px;
+}
+.degree {
+  font-size: 30px;
+}
