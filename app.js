@@ -17,11 +17,18 @@ window.addEventListener('load', () => {
         })
         .then((data) => {
           console.log(data);
-          const { summary, temperature } = data.currently;
+          const { summary, temperature, icon } = data.currently;
           tempDeg.textContent = temperature;
           tempDes.textContent = summary;
           locationName.textContent = data.timezone;
+          setIcon(icon, document.querySelector('.icon'));
         });
     });
+  }
+  function setIcon(icon, iconID) {
+    const skycons = new Skycons({ color: 'black' });
+    const currentIcon = icon.replace(/-/g, '_').toUpperCase();
+    skycons.play();
+    return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
