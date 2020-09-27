@@ -14,8 +14,22 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(rgb(213, 230, 233), rgb(44, 128, 44));
+  background: linear-gradient(rgb(14, 142, 165), rgb(44, 128, 44));
 }
+.heading {
+  margin-bottom: 20px;
+}
+.weather-app {
+  background: rgb(222, 240, 255);
+  width: 600px;
+  height: 50%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
 .location,
 .temp {
   height: 30vh;
@@ -38,4 +52,7 @@ body {
 }
 .degree {
   font-size: 30px;
+}
+.notification {
+  margin-bottom: 50px;
 }
