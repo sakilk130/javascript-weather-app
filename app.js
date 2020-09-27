@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         console.log(data);
         const { summary, temperature, icon } = data.currently;
         let celsius = (temperature - 32) * (5 / 9);
-        tempDeg.textContent = Math.floor(celsius);
+        tempDeg.textContent = Math.floor(celsius) + '°';
         tempDes.textContent = summary;
         locationName.textContent = data.timezone;
         setIcon(icon, document.querySelector('.icon'));
